@@ -21,7 +21,7 @@
           </p>
           <p>Created {{ task.created_at }}</p>
           <p>
-            Tags: {{ task.tags.name }}
+            Tags: {% for tag in task.tags.all %} {{ tag.name }} {% endfor %}
             <a href="{% url 'todo_list:task_update' pk=task.id %}">Update</a>
             <a href="{% url 'todo_list:task_delete' pk=task.id %}">Delete</a>
           </p>

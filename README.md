@@ -25,3 +25,4 @@ python manage.py runserver # starts Django server
 ## Demo
 
 ![TODO list Interface](demo.png)
+![TODO tags Interface](demo_1.png)
